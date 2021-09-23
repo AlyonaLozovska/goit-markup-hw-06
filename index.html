@@ -432,21 +432,21 @@
             </ul>
         </div>
         <div class="footer-social-form">
-            <p class="footer-social-form">
+            <p class="footer-social-form-head">
                 Подпишитесь на рассылку
             </p>
-            <label class="footer-form-field">
+        <form action="#" class="footer-form-input-wrapper">
+            <span class="footer-form-email">
+                <input type="email" name="user-email" plauholder="E-mail" required>
+        
                 
-            <span class="footer-form-input-wrapper">
-                   
-                <textarea name="user-message" class="footer-form-message" placeholder="E-mail"></textarea>
-            </label>
+            </span>
                 <button type="submit" class="footer-form-btn">Подписаться
-                    <svg class="footer-form-icon">
-                        <use href=./image/for-sprite/sprite.svg#icon-send></use>
+                    <svg class="footer-form-icon"><use href=./image/for-sprite/sprite.svg#icon-send></use>
                     </svg>
                 </button>
-                </form>
+            
+        </form>
         </div>
     </div>
     </footer>
@@ -493,7 +493,7 @@
                         Комментарий
                         <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
                     </label>
-                    <input type="checkbox" class="modal-form-checkbox" id="accept-policy">
+                    <input type="checkbox" class="visyally-hidden modal-form-checkbox" id="accept-policy">
                     <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#" class="modal-form-label-link">Условия договора</a></label>
                     <button type="submit" class="modal-form-btn">Отправить</button>
                 </form>
