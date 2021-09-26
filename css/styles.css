@@ -686,12 +686,14 @@ fill: rgba(255, 255, 255, 0.6);
 }
 
 
-.footer-form-email:focus {
+.footer-form-email:focus,
+.footer-form-email:hover {
 fill: var(--accent-color);
 }
 
 
 .footer-form-btn {
+align-self: center;
 width: 200px;
 height: 50px;
 background: #2196F3;
@@ -1138,12 +1140,15 @@ outline: none;
 border-color: var(--accent-color);
 }
 
-.modal-form-checkbox:checked + .modal-form-checkbox-label:before {
-background-image: url(./image/icon-check.jpg);
+.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
+background-image: url('../image/icon-check.svg');
+background-color: #188CE8;
+background-position: center;
+background-origin: padding-box;
+background-repeat: no-repeat;
 }
-
+    
 .modal-form-checkbox:focus + .modal-form-checkbox-label::before {
-/* outline: 1px solid var(--accent-color); */
 border-color: var(--accent-color);
 }
 
